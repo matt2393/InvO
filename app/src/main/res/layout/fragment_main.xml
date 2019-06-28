@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_toma_dec_main"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:text="Toma de decisiones"
+        android:background="@drawable/btn_round"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_juegos_main"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_juegos_main"
+        android:textAllCaps="false"
+        android:text="Juegos"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_round"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintTop_toBottomOf="@id/button_toma_dec_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_inv_main"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_inv_main"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:text="Teoria de Inventarios"
+        android:background="@drawable/btn_round"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintTop_toBottomOf="@id/button_juegos_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_colas_main"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_colas_main"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:text="Teoria de colas"
+        android:background="@drawable/btn_round"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintTop_toBottomOf="@id/button_inv_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
