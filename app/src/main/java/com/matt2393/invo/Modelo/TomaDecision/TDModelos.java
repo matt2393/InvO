@@ -122,7 +122,7 @@ public class TDModelos {
         int i, j;
         for (j = 0; j < m; j++)
             if (j == 0 || prob[j] > decision.getProbabilidad()) {
-                decision.setProbabilidad(decision.getProbabilidad());
+                decision.setProbabilidad(prob[j]);
                 decision.setJ(j);
             }
         j = decision.getJ();
@@ -288,7 +288,6 @@ public class TDModelos {
     }
 
     public double VEE(Decision decSinExp, Decision[] decConExp){
-
         double pagoE=0,vE;
         int i,j;
         for (i=0;i<posteriori.length;i++){

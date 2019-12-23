@@ -39,7 +39,7 @@ public class TDModelos {
         int i, j, k, h, l;
         boolean b, b1;
         b = b1 = true;
-        while (b && b1) {
+        while (b && b1 && (n>2|| m>2)) {
             for (i = 0; i < m; i++) {
                 for (j = 0; j < m; j++) {
                     if (i != j) {
@@ -131,8 +131,7 @@ public class TDModelos {
     }
 
     public DecisionJuego puntoSilla() {
-        DecisionJuego decisionJuego = new DecisionJuego();
-        decisionJuego.setValorJuego(-100000000);
+        DecisionJuego decisionJuego = null;
 
         DecisionJuego fil[], col[];
         fil = new DecisionJuego[n];
@@ -187,6 +186,7 @@ public class TDModelos {
         DecisionJuego d[] = new DecisionJuego[2];
         double p1, p2, q1, q2;
         int i, j;
+        Dominacion();
         DecisionJuego dA, dB;
         dA = new DecisionJuego();
         dB = new DecisionJuego();
@@ -204,6 +204,10 @@ public class TDModelos {
             dB.setProb(q1 > q2 ? q1 : q2);
             dA.setjA(p1>p2?0:1);
             dB.setjB(q1>q2?0:1);
+        }
+        else{
+            dA=null;
+            dB=null;
         }
         d[0] = dA;
         d[1] = dB;

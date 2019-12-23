@@ -111,4 +111,28 @@ public class Colas {
         return aux;
     }
 
+    public double getP() {
+        return p;
+    }
+
+    public double getP0() {
+        return p0;
+    }
+
+    public double getLq() {
+        return Lq;
+    }
+
+    public double getLs() {
+        return Ls;
+    }
+
+    public double getWq() {
+        return Wq;
+    }
+
+    public double getWs() {
+        return Ws;
+    }
+
 }

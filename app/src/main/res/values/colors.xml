@@ -2,8 +2,13 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#4BAAD6</color>
 
 
     <color name="colorButtonText">#fff</color>
+
+    <color name="colorDesicion">#D85252</color>
+    <color name="colorJuegos">#3DA33F</color>
+    <color name="colorInventarios">#3466A7</color>
+    <color name="colorColas">#6D38B1</color>
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_decision"
+        android:icon="@drawable/ic_decision"
+        android:title="Desiciones"
+        android:checked="true"
+        android:iconTint="@color/colorDesicion"/>
+
+    <item
+        android:id="@+id/item_juegos"
+        android:icon="@drawable/ic_game"
+        android:title="Juegos"
+        android:iconTint="@color/colorJuegos"/>
+
+
+    <item
+        android:id="@+id/item_inventario"
+        android:icon="@drawable/ic_inventory"
+        android:title="Inventarios"
+        android:iconTint="@color/colorInventarios"/>
+
+    <item
+        android:id="@+id/item_colas"
+        android:icon="@drawable/ic_queue"
+        android:title="Colas"
+        android:iconTint="@color/colorColas"/>
+
+</menu>
